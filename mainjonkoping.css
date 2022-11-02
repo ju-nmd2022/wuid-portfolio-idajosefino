@@ -1,0 +1,17 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile-image {
+    float: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #72B244;
+    background-color: #ddecd2;
+    padding-right: 3rem;
+}
+
+.multi-column {
+    columns: 2; 
+}
