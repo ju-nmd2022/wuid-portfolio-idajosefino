@@ -1,3 +1,98 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero-image {
+    /* background-image: linear-gradient(rgba(0,0,0,0.5)), (rgba(0,0,0,0,5)), url("images/heropic.png"); */
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation: scaling-hero-anim 4s 0.25s cubic-bezier(0, 0.71, 0.4, 0.97)
+        forwards;
+    animation-iteration-count: infinite;
+/* change this is you want it to just move in one time, remove the line above. */
+    will-change: transform;
+}
+
+.hero-head {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.waviy {
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  
+  .waviy span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+  }
+
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    animation-name: herotext;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;}
+
+@keyframes herotext {
+    from {
+        color: #72B244;
+    }
+    to {
+        color: white;
+    }
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 2;
+    }
+  }
+
+  @keyframes scaling-hero-anim {
+    from {
+      transform: scale(1.25);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -7,11 +102,53 @@
     padding-inline-start: 3rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     color: #72B244;
     background-color: #ddecd2;
+    padding: 1rem;
 }
+
+.texthead3 {
+    padding: 1rem;
+}
+
+.button1 {
+    text-align: center;
+    border: none;
+    width: 150px;
+    position: absolute;
+    top: -350%;
+    left: 120%;
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    background-color: #72B244;
+    color: white;
+}   
+
+.button2 {
+    text-align: center;
+    border: none;
+    width: 150px;
+    position: absolute;
+    top: -350%;
+    left: 95%;
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    background-color: #72B244;
+    color: white;
+}   
 
 .multi-column {
     columns: 2; 
+    padding: 1rem;
 }
+
+.footer {
+    padding: 1rem;
+}
+
+/* <!-- These 158 lines of code was added by courtesy of w3schools link: https://www.w3schools.com/howto/howto_css_hero_image.asp and link: https://www.w3schools.com/css/css3_buttons.asp, Bertrand Vanderdonckt link: https://codepen.io/bvg-studio/pen/vYjoxEK, Álvaro link: https://codepen.io/alvarotrigo/pen/xxLvyOG and lectures by Garrit Schaap --> */
