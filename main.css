@@ -112,7 +112,7 @@ h2, h3, h4, h5, h6 {
     padding: 1rem;
 }
 
-.button1 {
+/* .button1 {
     text-align: center;
     border: none;
     width: 150px;
@@ -140,7 +140,9 @@ h2, h3, h4, h5, h6 {
 .button2:hover {
     background-color: #72B244;
     color: white;
-}   
+}    */
+
+/* I couldn't get the buttons to work in github... */
 
 .multi-column {
     columns: 2; 
