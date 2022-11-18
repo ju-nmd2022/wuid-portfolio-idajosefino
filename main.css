@@ -15,8 +15,8 @@ body, html {
     position: relative;
     animation: scaling-hero-anim 4s 0.25s cubic-bezier(0, 0.71, 0.4, 0.97)
         forwards;
-    animation-iteration-count: infinite;
-/* change this is you want it to just move in one time, remove the line above. */
+    /* animation-iteration-count: infinite; */
+/* add infinite if you want animation to move in and out constantly. */
     will-change: transform;
 }
 
